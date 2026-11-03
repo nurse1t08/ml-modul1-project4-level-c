@@ -1,0 +1,41 @@
+{
+  "data_path": "data/hotel_bookings_demo.csv",
+  "source_rows": 3500,
+  "train_size": 2100,
+  "val_size": 700,
+  "test_size": 700,
+  "winner_from_cv": "oversample",
+  "precision_goal": 0.95,
+  "goal_met_on_validation": false,
+  "test_at_0_5": {
+    "threshold": 0.5,
+    "N": 700,
+    "TN": 196,
+    "FP": 166,
+    "FN": 156,
+    "TP": 182,
+    "predicted_cancellations": 348,
+    "accuracy": 0.54,
+    "precision": 0.5229885057471264,
+    "recall": 0.5384615384615384,
+    "f1": 0.5306122448979592,
+    "pr_auc": 0.5576179601757401,
+    "roc_auc": 0.5661021935990062
+  },
+  "test_at_selected_threshold": {
+    "threshold": 0.755,
+    "N": 700,
+    "TN": 357,
+    "FP": 5,
+    "FN": 324,
+    "TP": 14,
+    "predicted_cancellations": 19,
+    "accuracy": 0.53,
+    "precision": 0.7368421052631579,
+    "recall": 0.04142011834319527,
+    "f1": 0.0784313725490196,
+    "pr_auc": 0.5576179601757401,
+    "roc_auc": 0.5661021935990062
+  },
+  "message": "Исследовательский прототип: даже precision на validation не гарантирует безопасность овербукинга."
+}
